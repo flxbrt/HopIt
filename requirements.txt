@@ -1,0 +1,10 @@
+# Core dependencies
+casadi==3.6.4
+cantera==3.0.0
+CoolProp==6.6.0
+
+# Standard library modules (included with Python – listed for completeness)
+# These do not need to be installed separately:
+# os
+# time
+# json
