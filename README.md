@@ -71,4 +71,7 @@ Later versions may load this from a .json or .yaml file.
 🚀 Planned Enhancements
 - Plotting of system sketch with subsystems to scale
 - Adding 'Performance Mode' to compute the flight time and engine performance given a system (reverse to current mode); this is practical when one once to understand the potential performance of the system for different COTS components
-- Coupling to [THERMAT](https://github.com/flxbrt/THERMAT)
+- Coupling to [THERMAT](https://github.com/flxbrt/THERMAT) for thermal feasibility check of system design
+- Rework functions.py and casadi_core.py to solve iterative problem all at once through root finding
+- Add gradient based optimization
+- Add automatic injector and thrust chamber liner computation tool
