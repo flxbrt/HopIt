@@ -8,10 +8,13 @@
 ```plaintext
 hopit/
 ├── main.py              # Entry point: runs iterative system analysis
-├── system.json          # Example system configuration (optional)
-└── core/
-    ├── functions.py     # Utility functions for mass estimation
-    └── casadi_core.py   # CasADi-based tank sizing core
+├── config/
+│   └── system.json      # system configuration with required inputs, i.e. tank materials, tank pressure, combustion chamber pressure etc.
+├── core/              
+│   ├── functions.py	 # Utility functions for mass estimation
+│   └── casadi_core.py	 # CasADi-based tank sizing core
+├── README.md
+├── requirements.txt	
 ```
 ---
 
