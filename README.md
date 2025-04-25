@@ -60,7 +60,7 @@ config = {
 ```
 Later versions may load this from a .json or .yaml file.
 
-💡 Features
+## 💡 Features
 - Designed for conceptual Vertical take off vertical landing vehicle studies propelled by a bi-liquid rocket engine
 - Modular code structure (easy to adapt individual subsystems or extend with additional subsystems)
 - Tank sizing equations solved via root finding with CasADi
@@ -68,7 +68,7 @@ Later versions may load this from a .json or .yaml file.
 - Allows pressure fed and epump fed cycles
 - Computes main combustion chamber performance parameters
 
-🚀 Planned Enhancements
+## 🚀 Planned Enhancements
 - Plotting of system sketch with subsystems to scale
 - Adding 'Performance Mode' to compute the flight time and engine performance given a system (reverse to current mode); this is practical when one once to understand the potential performance of the system for different COTS components
 - Coupling to [THERMAT](https://github.com/flxbrt/THERMAT) for thermal feasibility check of system design
