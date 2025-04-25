@@ -13,7 +13,7 @@ hopit/
 ├── core/              
 │   ├── functions.py	 # Utility functions for mass estimation
 │   └── casadi_core.py	 # CasADi-based tank sizing core
-├── utilities/			 # Additional scripts not required for the core functionality
+├── utilities/		 # Additional scripts not required for the core functionality
 ├── README.md
 ├── requirements.txt	
 ```
