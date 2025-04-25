@@ -1,14 +1,9 @@
 # -*- coding: utf-8 -*-
 """
-Title: functions.py
+Title: casadi_core.py
 Project: HopIt - Hopper Iterative System Analysis Tool
 Author: @flxbrt
 Version: 2.1
-
-Description:
-    Entry point for iterative hopper system analysis. Loads configuration,
-    initializes combustion parameters, and runs a convergence loop to estimate
-    total system mass through subsystem evaluations.
 """
 
 
