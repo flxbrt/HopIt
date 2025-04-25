@@ -84,4 +84,4 @@ Later versions may load this from a .json or .yaml file.
 
 ## Author
 Developed by @flxbrt
-Version: 2.0
+Version: 2.1
