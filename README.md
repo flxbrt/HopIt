@@ -5,17 +5,17 @@
 ---
 
 ## 📁 Project Structure
-
+```plaintext
 hopit/
 ├── main.py              # Entry point: runs iterative system analysis
 ├── system.json          # Example system configuration (optional)
 └── core/
     ├── functions.py     # Utility functions for mass estimation
     └── casadi_core.py   # CasADi-based tank sizing core
-
+```
 ---
 
-## ▶️ Getting Started
+## 🛫 Getting Started
 
 ### 1. Clone the repository
 
@@ -35,20 +35,14 @@ python main.py
 ```
 
 By default, it runs with a hardcoded config defined inside main.py. The tool will:
-
->>Load system configuration
-
->>Estimate subsystem masses
-
->>Iterate until total mass convergence
-
->>Print the result (if sys_print = True)
-
->>Optionally store output (if store_system = True)
+- Load system configuration
+- Estimate subsystem masses and compute engine performance parameter
+- Iterate until total mass convergence
+- Print the result (if sys_print = True)
+- Optionally store output (if store_system = True)
 
 
 ⚙️ Configuration
-
 ```bash
 config = {
     'Flight Time [s]': 80,
@@ -60,37 +54,17 @@ config = {
     'Oxidizer Self Pressurised': False
 }
 ```
-
 Later versions may load this from a .json or .yaml file.
 
 💡 Features
+- Designed for conceptual Vertical take off vertical landing vehicle studies propelled by a bi-liquid rocket engine
+- Modular code structure (easy to adapt individual subsystems or extend with additional subsystems)
+- Tank sizing equations solved via root finding with CasADi
+- Allows self pressurized and non self pressurized propellants
+- Allows pressure fed and epump fed cycles
+- Computes main combustion chamber performance parameters
 
-Iterative loop for consistent subsystem mass convergence
-
-Tank sizing via CasADi-based nonlinear solving
-
-Modular code structure (easy to extend with additional subsystems)
-
-Designed for conceptual rocket vehicle studies
-
-self pressurized vs non self pressurized
-
-chamber sizing
-
-pump fed or pressure fed
-
-
-
-
-📌 Planned Enhancements
-CLI interface with argparse
-
-JSON-based config loading
-
-Plotting of key subsystem masses
-
-Web-based visualization (long-term)
-
-Couling to THERMAT
-
-addind performance mode --> allows to copmute system performance given a system --> helps to understand the performance of the systm for different available COTS components
+🚀 Planned Enhancements
+- Plotting of system sketch with subsystems to scale
+- Adding 'Performance Mode' to compute the flight time and engine performance given a system (reverse to current mode); this is practical when one once to understand the potential performance of the system for different COTS components
+- Coupling to [THERMAT](https://github.com/flxbrt/THERMAT)
