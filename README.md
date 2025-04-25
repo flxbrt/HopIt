@@ -60,6 +60,8 @@ config = {
 ```
 Later versions may load this from a .json or .yaml file.
 
+---
+
 ## 💡 Features
 - Designed for conceptual Vertical take off vertical landing vehicle studies propelled by a bi-liquid rocket engine
 - Modular code structure (easy to adapt individual subsystems or extend with additional subsystems)
@@ -68,6 +70,8 @@ Later versions may load this from a .json or .yaml file.
 - Allows pressure fed and epump fed cycles
 - Computes main combustion chamber performance parameters
 
+---
+
 ## 🚀 Planned Enhancements
 - Plotting of system sketch with subsystems to scale
 - Adding 'Performance Mode' to compute the flight time and engine performance given a system (reverse to current mode); this is practical when one once to understand the potential performance of the system for different COTS components
@@ -75,3 +79,9 @@ Later versions may load this from a .json or .yaml file.
 - Rework functions.py and casadi_core.py to solve iterative problem all at once through root finding
 - Add gradient based optimization
 - Add automatic injector and thrust chamber liner computation tool
+
+---
+
+## Author
+Developed by @flxbrt
+Version: 2.0
